@@ -1,0 +1,6 @@
+{
+  "name": "YENA Skincare",
+  "description": "Luxury botanical skincare e-commerce application featuring clinical formulations, interactive product details, catalog filtering, and ritual shopping bag.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

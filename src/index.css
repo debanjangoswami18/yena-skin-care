@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #fbf9f5;
+  --color-surface-dim: #dbdad6;
+  --color-surface-bright: #fbf9f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3ef;
+  --color-surface-container: #efeeea;
+  --color-surface-container-high: #eae8e4;
+  --color-surface-container-highest: #e4e2de;
+  --color-on-surface: #1b1c1a;
+  --color-on-surface-variant: #4d4540;
+  --color-inverse-surface: #30312e;
+  --color-inverse-on-surface: #f2f0ed;
+  --color-outline: #7f7570;
+  --color-outline-variant: #d1c4be;
+  --color-surface-tint: #665d58;
+  --color-primary: #18120e;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #2d2622;
+  --color-on-primary-container: #978c87;
+  --color-inverse-primary: #d1c4be;
+  --color-secondary: #8f4c35;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #ffa98d;
+  --color-on-secondary-container: #793b26;
+  --color-tertiary: #091609;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #1d2b1c;
+  --color-on-tertiary-container: #83937f;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ede0d9;
+  --color-primary-fixed-dim: #d1c4be;
+  --color-on-primary-fixed: #211a17;
+  --color-on-primary-fixed-variant: #4d4541;
+  --color-secondary-fixed: #ffdbd0;
+  --color-secondary-fixed-dim: #ffb59d;
+  --color-on-secondary-fixed: #390c00;
+  --color-on-secondary-fixed-variant: #723520;
+  --color-tertiary-fixed: #d7e7d1;
+  --color-tertiary-fixed-dim: #bbcbb6;
+  --color-on-tertiary-fixed: #111f11;
+  --color-on-tertiary-fixed-variant: #3c4b3a;
+  --color-background: #fbf9f5;
+  --color-on-background: #1b1c1a;
+  --color-surface-variant: #e4e2de;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-headline-sm: 'Playfair Display', Georgia, serif;
+  --font-headline-md: 'Playfair Display', Georgia, serif;
+  --font-headline-lg: 'Playfair Display', Georgia, serif;
+  --font-display-hero: 'Playfair Display', Georgia, serif;
+  --font-display-hero-mobile: 'Playfair Display', Georgia, serif;
+  --font-headline-lg-mobile: 'Playfair Display', Georgia, serif;
+  --font-body-sm: 'Plus Jakarta Sans', sans-serif;
+  --font-body-md: 'Plus Jakarta Sans', sans-serif;
+  --font-body-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-label-sm: 'Plus Jakarta Sans', sans-serif;
+  --font-label-md: 'Plus Jakarta Sans', sans-serif;
+  --font-label-caps: 'Plus Jakarta Sans', sans-serif;
+
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-gutter-mobile: 0.75rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+  }
+
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 12px);
+}
+
+.pt-safe {
+  padding-top: max(env(safe-area-inset-top, 0px), 0px);
+}
