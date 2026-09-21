@@ -9,13 +9,13 @@ A modern, responsive skincare e-commerce application built with React, Vite, and
  ✨ Features
 
 - 📱 Fully Responsive Design
-- 🧴 Interactive Product Catalog
+- 🧴 Interactive Product Catalog 
 - ⚡ Fast Performance powered by Vite & React
 - 🎨 Beautiful UI styled with Tailwind CSS
 
  🛠️ Tech Stack
 
-- Frontend Framework: React
+- Frontend Framework:  React
 - Build Tool: Vite
 - Styling: Tailwind CSS
 - Deployment: Vercel
